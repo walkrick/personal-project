@@ -21,10 +21,10 @@ class App < Sinatra::Application
   end
   post "/emails" do
 
-
     @database_connection.sql("INSERT INTO users (email) VALUES ('#{params[:email]}')")
     flash[:notice] = "Thank you for registering"
     redirect "/"
+
   end
 
 
