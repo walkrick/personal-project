@@ -1,16 +1,25 @@
 <!DOCTYPE html>
 <html>
+<header>
+  Website
+
+</header>
+<nav width="100px" >
+  nav
+</nav>
+
 <head>
 
   <meta charset="UTF-8">
 
-  <title>The Personal Project</title>
+  <title>THE PERSONAL PROJECT</title>
 
   <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css">
 
   <link href="style.css" rel="stylesheet" type="text/css"/>
 
 </head>
+
 <body>
 
 
@@ -24,12 +33,12 @@
     <div id="content">
 
       <% if flash[:success]%>
-          <span style="color:green"><%= flash[:success] %></span>
+        <span style="color:green"><%= flash[:success] %></span>
       <% end %>
 
 
       <% if flash[:notice] %>
-          <%= flash[:notice] %>
+        <%= flash[:notice] %>
       <% end %>
 
       <%= yield %>
@@ -43,13 +52,12 @@
 
 
 
-
-
-
 </body>
 
 
 </html>
+
+
 
 
 
